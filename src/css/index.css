@@ -1,0 +1,100 @@
+ *{
+     padding: 0;
+     margin: 0;
+     list-style: none;
+     text-decoration: none;
+ }
+
+.slider-wrapper{
+     width:100%;
+     height: 800px;
+     position: relative;
+} 
+.slider-wrapper .sliders{
+    width: 100%;
+    height: 800px;
+    position: absolute;
+}
+.slider-wrapper .sliders .slider-item{
+    display: none;
+    width: 100%;
+    height: 800px;
+    opacity: 0;
+}
+.slider-wrapper .sliders .item-one{
+    opacity: 1;
+    display: block;
+    background: url(./../img/bg-1.jpg) no-repeat;
+}
+.slider-wrapper .sliders .item-two{
+    background: url(./../img/bg-2.jpg) no-repeat;
+ }
+.slider-wrapper .sliders .item-three{
+    background: url(./../img/bg-3.jpg) no-repeat;
+}
+.slider-wrapper .slider-box{
+    width: 900px;
+    margin: 0 auto;
+}
+.slider-wrapper .sliders .slider-item .slider-box{
+  padding-top: 100px;
+}
+.slider-wrapper .sliders .slider-item .slider-box .description{
+    width: 400px;
+    float: left;
+    margin-top: 200px;
+}
+.slider-wrapper .sliders .slider-item .slider-box .description h1,h2,p{
+    color: #fff;
+    padding: 10px 0;
+}
+.slider-wrapper .sliders .slider-item .slider-box .img{
+    width: 400px;
+    float: right;
+}
+.slider-wrapper .img img{
+    width:0%;
+}
+
+.slider-wrapper .slider-btn{
+    width: 100%;
+    position: absolute;;
+    top: 50%;
+    margin-top: -20px;
+}
+
+.slider-wrapper .slider-btn div{
+    width: 30px;
+    height: 40px;
+}
+.slider-wrapper .slider-btn .prev{
+    position: absolute;
+    left: 50px;
+    background-image: url('./../img/left-arrow.png')
+}
+.slider-wrapper .slider-btn .next{
+    position: absolute;
+    right: 50px;
+    background-image: url('./../img/right-arrow.png');
+}
+
+.slider-wrapper .slider-radius{
+    width: 100%;
+    bottom: 100px;
+    position: absolute;
+}
+.slider-wrapper .slider-radius ul{
+    width: 450px;
+    float: right;
+    text-align: center;
+}
+
+.slider-wrapper .slider-radius ul li{
+    width: 17px;
+    height: 17px;
+    background-image: url('./../img/slider_control.png');
+    display: inline-block;
+}
+.slider-wrapper .slider-radius ul .active-radius{
+    background-image: url('./../img/active_slider_control.png')
+}
